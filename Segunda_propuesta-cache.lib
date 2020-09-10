@@ -1,0 +1,66 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# ACS712ELCTR-05B-T_ACS712ELCTR-05B-T
+#
+DEF ACS712ELCTR-05B-T_ACS712ELCTR-05B-T IC 0 30 Y Y 1 F N
+F0 "IC" 1150 300 50 H V L CNN
+F1 "ACS712ELCTR-05B-T_ACS712ELCTR-05B-T" 1150 200 50 H V L CNN
+F2 "SOIC127P600X175-8N" 1150 100 50 H I L CNN
+F3 "http://docs-emea.rs-online.com/webdocs/0d88/0900766b80d885f5.pdf" 1150 0 50 H I L CNN
+F4 "Current Sensor, Bi  5A SOIC8 Allegro Microsystems ACS712ELCTR-05B-T Hall Effect Sensor 8-Pin SOIC, 4.5  5.5 V" 1150 -100 50 H I L CNN "Description"
+F5 "1.75" 1150 -200 50 H I L CNN "Height"
+F6 "Allegro Microsystems" 1150 -300 50 H I L CNN "Manufacturer_Name"
+F7 "ACS712ELCTR-05B-T" 1150 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "6807131P" 1150 -700 50 H I L CNN "RS Part Number"
+F9 "http://uk.rs-online.com/web/p/products/6807131P" 1150 -800 50 H I L CNN "RS Price/Stock"
+F10 "R1076681" 1150 -900 50 H I L CNN "Allied_Number"
+F11 "http://www.alliedelec.com/allegro-microsystems-acs712elctr-05b-t/R1076681/" 1150 -1000 50 H I L CNN "Allied Price/Stock"
+DRAW
+P 5 0 1 6 200 100 1100 100 1100 -400 200 -400 200 100 N
+X IP+ 1 0 0 200 R 50 50 0 0 U
+X IP+_1 2 0 -100 200 R 50 50 0 0 U
+X IP- 3 0 -200 200 R 50 50 0 0 U
+X IP-_1 4 0 -300 200 R 50 50 0 0 U
+X GND 5 1300 -300 200 L 50 50 0 0 W
+X FILTER 6 1300 -200 200 L 50 50 0 0 U
+X VIOUT 7 1300 -100 200 L 50 50 0 0 B
+X VCC 8 1300 0 200 L 50 50 0 0 W
+ENDDRAW
+ENDDEF
+#
+# Device_C
+#
+DEF Device_C C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "Device_C" 25 -100 50 H V L CNN
+F2 "" 38 -150 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 20 -80 -30 80 -30 N
+P 2 0 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# power_Earth
+#
+DEF power_Earth #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_Earth" 0 -150 50 H I C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -25 -75 25 -75 N
+P 2 0 1 0 -5 -100 5 -100 N
+P 2 0 1 0 0 -50 0 0 N
+P 2 0 1 0 50 -50 -50 -50 N
+X Earth 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+#End Library
