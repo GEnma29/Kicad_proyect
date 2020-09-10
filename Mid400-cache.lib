@@ -1,0 +1,49 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Device_R
+#
+DEF Device_R R 0 0 N Y 1 F N
+F0 "R" 80 0 50 V V C CNN
+F1 "Device_R" 0 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+S -40 -100 40 100 0 1 10 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# MID400SD_MID400SD
+#
+DEF MID400SD_MID400SD IC 0 30 Y Y 1 F N
+F0 "IC" 1050 300 50 H V L CNN
+F1 "MID400SD_MID400SD" 1050 200 50 H V L CNN
+F2 "SOP254P1030X508-8N" 1050 100 50 H I L CNN
+F3 "https://componentsearchengine.com/Datasheets/1/MID400SD.pdf" 1050 0 50 H I L CNN
+F4 "Logic Output Optocouplers 8-Pin Optocoupler Logic aC Line" 1050 -100 50 H I L CNN "Description"
+F5 "5.08" 1050 -200 50 H I L CNN "Height"
+F6 "ON Semiconductor" 1050 -300 50 H I L CNN "Manufacturer_Name"
+F7 "MID400SD" 1050 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "512-MID400SD" 1050 -500 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.com/Search/Refine.aspx?Keyword=512-MID400SD" 1050 -600 50 H I L CNN "Mouser Price/Stock"
+F10 "8064169P" 1050 -700 50 H I L CNN "RS Part Number"
+F11 "http://uk.rs-online.com/web/p/products/8064169P" 1050 -800 50 H I L CNN "RS Price/Stock"
+DRAW
+P 5 0 1 6 200 100 1000 100 1000 -400 200 -400 200 100 N
+X VIN1 1 0 0 200 R 50 50 0 0 U
+X N/C_1 2 0 -100 200 R 50 50 0 0 U
+X VIN2 3 0 -200 200 R 50 50 0 0 U
+X N/C_2 4 0 -300 200 R 50 50 0 0 U
+X GND 5 1200 -300 200 L 50 50 0 0 U
+X VO 6 1200 -200 200 L 50 50 0 0 U
+X AUX. 7 1200 -100 200 L 50 50 0 0 U
+X VCC 8 1200 0 200 L 50 50 0 0 U
+ENDDRAW
+ENDDEF
+#
+#End Library
